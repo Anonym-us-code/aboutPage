@@ -1,0 +1,305 @@
+*{
+    font-family: "Liberation sans";
+}
+a{
+    text-decoration: none;
+}
+hr{
+    width: 50px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative;
+}
+#output{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    visibility: hidden;
+}
+/*animations*/
+.showUp{
+    animation: slideUp 2s;
+    animation-direction: normal;
+    transform: translateY(0);
+}
+@keyframes slideUp {
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+#outRight{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    visibility: hidden;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 0 50px;
+    margin: 0 auto;
+    background-color: rgb(12, 12, 55);
+    height: fit-content;
+    box-sizing:border-box;
+    border-radius: 3px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a strong{
+    font-weight: 700;
+    color: rgb(209, 209, 238);
+    text-decoration: none;
+    font-size: 22px;
+}
+.nav-links{
+    width: fit-content;
+}
+.nav-links ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links ul li a{
+    color:rgb(137, 137, 205) ;
+    font-weight: 600;
+}
+
+.footer{
+    background-color: rgb(12, 12, 55);
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(139, 139, 197);
+    font-weight: 700;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.bodyPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin:20px auto;
+    height: fit-content;
+    width: 80%;
+}
+.bodyPage .medicine h1{
+    background-color: rgb(163, 163, 225);
+    width: fit-content;
+    padding: 5px 15px;
+   border-bottom-right-radius: 30px;
+   border-top-left-radius: 30px;
+   box-shadow: 10px -10px 5px rgb(7, 7, 41);
+   margin-bottom: 0;
+}
+.bodyPage .medicine p{
+    color: rgb(194, 157, 228);
+    margin-bottom: 0;
+}
+.bodyPage .medicine{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0;
+    word-break: break-all;
+    text-align-last: center;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    background-color: rgb(63, 41, 83);
+    transition: 0.5s ease;
+}
+
+.medicine:hover{
+    background-color: aqua;
+}
+.medicine:hover p{
+    color: rgb(63, 41, 83);
+}
+.medicine:hover a{
+    color: rgb(63, 41, 83);
+    background-color: rgb(31, 52, 89);
+}
+.bodyPage .medicine a{
+    border: 1px solid rgb(71, 93, 213);
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    color: rgb(198, 170, 224);
+}
+
+.webDev{
+    width:400px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(7, 7, 36);
+    padding: 0 15px;
+    transition: 0.3s ease;
+}
+.webDev h1{
+    color: aquamarine;
+    border: 1px solid aqua;
+    padding: 5px 15px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-bottom: 0;
+    transition: 0.7s ease;
+}
+.webDev p{
+    color: rgb(45, 45, 81);
+    word-break: break-all;
+    text-align: center;
+    margin-bottom: 0;
+}
+.webDev a{
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: rgb(222, 209, 235);
+    transition: 1s ease;
+}
+.webDev:hover{
+    background-color: beige;
+}
+.webDev:hover h1{
+    color: black;
+}
+.webDev:hover a{
+    color: black;
+    background-color: rgb(109, 36, 36);
+}
+
+.softDev{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 70);
+    padding: 0 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.3s ease;
+}
+.softDev:hover{
+    background-color: black;
+}
+.softDev:hover h1{
+    color:blanchedalmond ;
+    background-color:  rgb(109, 155, 140);
+}
+.softDev:hover a{
+    color:black;
+    background-color: white;
+
+}
+
+.softDev h1{
+    color: rgb(109, 155, 140);
+    border:none;
+    padding: 5px 15px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: 0;
+    background-color: blanchedalmond;
+    transition: 0.7s ease;
+}
+.softDev p{
+    color: rgb(94, 94, 135);
+    word-break: break-all;
+    text-align: center;
+    margin-bottom: 0;
+}
+.softDev a{
+    transition: 0.5s ease;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: rgb(46, 24, 68);
+    background-color: black;
+}
+.cyber{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right, rgb(52, 52, 118), rgb(15, 4, 31));
+    padding: 0 15px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+.cyber:hover h1{
+    color: white;
+}
+.cyber:hover a{
+    color: white;
+}
+.cyber:hover p{
+    color: blueviolet;
+}
+.cyber h1{
+    color: red;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    transition: 0.5s ease;
+}
+.cyber p{
+    color: rgb(22, 116, 116);
+    word-break: break-all;
+    text-align-last: center;
+    margin-bottom: 0;
+    transition: 0.5s ease;
+}
+.cyber a{
+    color: red;
+    background: linear-gradient(to right, blue, red);
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+
